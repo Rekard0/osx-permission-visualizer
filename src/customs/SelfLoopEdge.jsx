@@ -9,7 +9,6 @@ export default function SelfLoopEdge({
   markerEndId,
   label, ...props
 }) {
-  console.log('loop data', data.index, 'label', label)
   const indx = data.index+1
   // Adjust these values based on the size and desired position of the loop
   const loopRadiusX = 50 + indx *10;
@@ -30,7 +29,7 @@ export default function SelfLoopEdge({
   const padding = 4; // Padding around the text
   const boxWidth = label.length * 8 + padding * 2; // Estimate width based on character count
   const boxHeight = 20; // Fixed height
-  
+
   // Rotation transform
   const rotationDegree = 90;
   const transform = `rotate(${rotationDegree}, ${labelX}, ${labelY})`;
